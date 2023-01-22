@@ -20,8 +20,7 @@ jobs:
         cache: 'pip'
     - run: pip install -r requirements.txt
     - name: Build socrata.db database
-      run: python scrape_socrata.py socrata/
-    #  run: python build_socrata_db.py socrata.db socrata
+      run: python build_socrata_db.py socrata.db socrata
     # - name: Set up Cloud Run
     #   uses: google-github-actions/setup-gcloud@v0
     #   with:
